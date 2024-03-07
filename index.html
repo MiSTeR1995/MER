@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Multi-Corpus Emotion Recognition Method based on Cross-Modal Gated Attention Fusion">
+    <meta name="keywords" content="INTERSPEECH 2024">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-Corpus Emotion Recognition Method based on Cross-Modal Gated Attention Fusion</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <link rel="icon" type="image/png" href="./static/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./static/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="shortcut icon" href="./static/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="./static/favicon/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/comp-slider.js" defer></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+    <a id="btt-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <polygon points="12 6.586 3.293 15.293 4.707 16.707 12 9.414 19.293 16.707 20.707 15.293 12 6.586"/>
+        </svg>
+    </a>
+
+    <section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+                Multi-Corpus Emotion Recognition Method based on Cross-Modal Gated Attention Fusion
+            </h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">Authors are hidden for peer review<sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup> Affiliation is hidden for peer review</span>
+                <br />
+                <span><a href="https://interspeech2024.org/" target="_blank">INTERSPEECH 2024</a> (submitted)</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper (coming soon)</span>
+                    </a>
+                </span>
+                <!-- <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                    </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                    <a href="https://github.com/INTERSPEECH-2024/MER/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                    </a>
+                </span>
+                <!-- Demo Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 Demo (coming soon)</span>
+                    </a>
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="section" style="padding: 0; margin:0">
+
+        <div class="TODO-section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-5">TODO List</h2>
+                        <div class="content has-text-justified">
+                            <svg viewBox="0 0 0 0" style="position: absolute; z-index: -1; opacity: 0;">
+                                <defs>
+                                    <path id="todo__line" stroke="#363636" d="M21 12.3h280v0.1z" ></path>
+                                    <path id="todo__box" stroke="#363636" d="M21 12.7v5c0 1.3-1 2.3-2.3 2.3H8.3C7 20 6 19 6 17.7V7.3C6 6 7 5 8.3 5h10.4C20 5 21 6 21 7.3v5.4"></path>
+                                    <path id="todo__check" stroke="#2b8f30" d="M10 13l2 2 5-5"></path>
+                                    <circle id="todo__circle" cx="13.5" cy="12.5" r="10"></circle>
+                                </defs>
+                            </svg>
+                            <div class="todo-list">
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">INTERSPEECH paper submission</div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">GitHub page creation</div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">Release code and models (soon) </div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">Release Demo (soon) </div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">arXiv paper submission (after accepting)</div>
+                            </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="abstract-section">
+            <div class="container is-max-desktop abstract-sect">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                Automatic emotion recognition system is a crucial aspect of human-computer interaction. Affective systems are capable of understanding human emotions and personalizing interactions, making them more intuitively understandable. Our novel method, evaluated through single- and multi-corpus research, allows for emotion analysis across multiple modalities such as video, audio, and text.  The method utilizes three encoders per modality and a decoder with high generalization ability that employs gated attention to combine features from all three modalities. The study evaluates four benchmark corpora: MOSEI, MELD, IEMOCAP, and AFEW. Due to the multi-corpus trained model, our method has a high generalization ability to the novel corpora. The proposed method achieves state-of-the-art results on the four research corpora and establishes the first baselines for multi-corpus studies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dataset-section">
+            <div class="container is-max-desktop">
+                <div class="dataset">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Pipeline of the proposed multimodal ER method</h2>
+                            <img class="img-method" src="./static/img/pipeline.png" alt="pipeline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion-section">
+            <div class="container is-max-desktop">
+                <div class="conclusion">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Conclusion</h2>
+                            <div class="content has-text-justified">
+                                <p>
+                                The paper proposes a multimodal ER method with high generalizability to novel corpora. The method incorporates three encoders to extract features from three modalities: audio, video, and text. To capture the context of audio and video signals, the method extracts statistic information from them. A gated attention mechanism is used to fuse the three modalities. The method was tested on four corpora (IEMOCAP, MOSEI, MELD, AFEW) in both single-corpus and multi-corpus research. The SOTA results were obtained on all corpora.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link external-link" href="https://github.com/INTERSPEECH-2024" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+            <div class="content">
+                <p>
+                This page was built using the <a href="https://github.com/INTERSPEECH-2024/MER" target="_blank">MER project page</a>, which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
