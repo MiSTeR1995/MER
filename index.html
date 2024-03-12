@@ -207,13 +207,76 @@
             </div>
         </div>
 
-        <div class="dataset-section">
+        <div class="pipeline-section">
             <div class="container is-max-desktop">
-                <div class="dataset">
+                <div class="pipeline">
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
                             <h2 class="title is-3">Pipeline of the proposed multimodal ER method</h2>
                             <img class="img-method" src="./static/img/pipeline.jpg" alt="pipeline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="container is-max-desktop">
+                <div class="table">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h6 class="title is-6">Train, Validation, and Test subsets, number of emotions, class imbalance and performance measures of research corpora. Acc refers to Accuracy, wAcc to Weighted Accuracy, F1 to F1-score, UAR to Unweighted Average Recall</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Corpus</th>
+                                        <th>Train</th>
+                                        <th>Val.</th>
+                                        <th>Test</th>
+                                        <th>Classes of emotions</th>
+                                        <th>Class imbalance (Mean / STD)</th>
+                                        <th>Evaluation measures</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IEMOCAP</td>
+                                        <td>5229</td>
+                                        <td>581</td>
+                                        <td>1623</td>
+                                        <td>6</td>
+                                        <td>959.7 / 344.4</td>
+                                        <td>Acc / F1 / UAR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MOSEI</td>
+                                        <td>16216</td>
+                                        <td>1835</td>
+                                        <td>4625</td>
+                                        <td>6</td>
+                                        <td>3734.3 / 2441.1</td>
+                                        <td>Acc / wAcc / F1 / UAR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MELD</td>
+                                        <td>9989</td>
+                                        <td>1109</td>
+                                        <td>2610</td>
+                                        <td>7</td>
+                                        <td>1426.9 / 1427.0</td>
+                                        <td>Acc / F1 / UAR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AFEW</td>
+                                        <td>773</td>
+                                        <td>383</td>
+                                        <td>--</td>
+                                        <td>7</td>
+                                        <td>110.4 / 31.1</td>
+                                        <td>Acc / F1 / UAR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
