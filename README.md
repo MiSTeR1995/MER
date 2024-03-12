@@ -4,7 +4,7 @@ The official repository for "Multi-Corpus Emotion Recognition Method based on Cr
 
 ## Abstract
 
-> Will soon be added
+Automatic emotion recognition is critical to human-computer interaction. However, current methods suffer from limited applicability as they tend to overfit on single-corpus datasets that reduces their real-world effectiveness when faced with new corpora. We propose a first multi-corpus emotion recognition method with high generalizability evaluated by the leave-one-corpus-out protocol. The method uses three encoders for each modality (audio, video, and text) and a decoder that employs a gated attention mechanism to combine features from all three modalities. The method is evaluated on four multimodal corpora: CMU-MOSEI, MELD, IEMOCAP, and AFEW. Our method achieves the state-of-the-art results on the research corpora and establishes the first baselines for multi-corpus studies. Also, our results demonstrate that the models trained with MELD exhibit the best generalizability to new data.
 
 ## Acknowledgments
 
