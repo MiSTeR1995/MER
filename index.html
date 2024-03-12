@@ -241,38 +241,38 @@
                                 <tbody>
                                     <tr>
                                         <td>IEMOCAP</td>
-                                        <td>5229</td>
-                                        <td>581</td>
-                                        <td>1623</td>
-                                        <td>6</td>
-                                        <td>959.7 / 344.4</td>
+                                        <td class="center">5229</td>
+                                        <td class="center">581</td>
+                                        <td class="center">1623</td>
+                                        <td class="center">6</td>
+                                        <td class="center">959.7 / 344.4</td>
                                         <td>Acc / F1 / UAR</td>
                                     </tr>
                                     <tr>
                                         <td>MOSEI</td>
-                                        <td>16216</td>
-                                        <td>1835</td>
-                                        <td>4625</td>
-                                        <td>6</td>
-                                        <td>3734.3 / 2441.1</td>
+                                        <td class="center">16216</td>
+                                        <td class="center">1835</td>
+                                        <td class="center">4625</td>
+                                        <td class="center">6</td>
+                                        <td class="center">3734.3 / 2441.1</td>
                                         <td>Acc / wAcc / F1 / UAR</td>
                                     </tr>
                                     <tr>
                                         <td>MELD</td>
-                                        <td>9989</td>
-                                        <td>1109</td>
-                                        <td>2610</td>
-                                        <td>7</td>
-                                        <td>1426.9 / 1427.0</td>
+                                        <td class="center">9989</td>
+                                        <td class="center">1109</td>
+                                        <td class="center">2610</td>
+                                        <td class="center">7</td>
+                                        <td class="center">1426.9 / 1427.0</td>
                                         <td>Acc / F1 / UAR</td>
                                     </tr>
                                     <tr>
                                         <td>AFEW</td>
-                                        <td>773</td>
-                                        <td>383</td>
-                                        <td>--</td>
-                                        <td>7</td>
-                                        <td>110.4 / 31.1</td>
+                                        <td class="center">773</td>
+                                        <td class="center">383</td>
+                                        <td class="center">&mdash;</td>
+                                        <td class="center">7</td>
+                                        <td class="center">110.4 / 31.1</td>
                                         <td>Acc / F1 / UAR</td>
                                     </tr>
                                 </tbody>
@@ -282,6 +282,234 @@
                 </div>
             </div>
         </div>
+
+        <div class="table-section">
+            <div class="container is-max-desktop">
+                <div class="table">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h6 class="title is-6">Single-corpus results (Recall, %) based on single-corpus models trained with the weighted loss. A, V and T refer to audio, video and text modalities, respectively. ↓ and ↑ show the most and the least informative modality.</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Modality</th>
+                                        <th>Neutral</th>
+                                        <th>Happy</th>
+                                        <th>Sad</th>
+                                        <th>Angry</th>
+                                        <th>Excited</th>
+                                        <th colspan="2">Frustrated</th>
+                                        <th>UAR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="9" class="center">IEMOCAP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A+V+T</td>
+                                        <td class="center">76.6</td>
+                                        <td class="center">51.7</td>
+                                        <td class="center">78.0</td>
+                                        <td class="center">78.8</td>
+                                        <td class="center">75.3</td>
+                                        <td colspan="2" class="center">69.6</td>
+                                        <td class="center">71.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o A</td>
+                                        <td class="center">69.5</td>
+                                        <td class="center">42.7</td>
+                                        <td class="center">74.3</td>
+                                        <td class="center">60.0 ↓</td>
+                                        <td class="center">72.6</td>
+                                        <td colspan="2" class="center">68.5</td>
+                                        <td class="center">64.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o V</td>
+                                        <td class="center">57.0 ↓</td>
+                                        <td class="center">58.0 ↑</td>
+                                        <td class="center">69.0</td>
+                                        <td class="center">72.4</td>
+                                        <td class="center">51.5 ↓</td>
+                                        <td colspan="2" class="center">77.4 ↑</td>
+                                        <td class="center">64.2 ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o T</td>
+                                        <td class="center">82.8 ↑</td>
+                                        <td class="center">14.7 ↓</td>
+                                        <td class="center">66.1 ↓</td>
+                                        <td class="center">77.6</td>
+                                        <td class="center">72.9</td>
+                                        <td colspan="2" class="center">3.4 ↓</td>
+                                        <td class="center">52.9 ↓</td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>Modality</th>
+                                        <th>Neutral</th>
+                                        <th>Happy / Joy</th>
+                                        <th>Sad</th>
+                                        <th>Angry</th>
+                                        <th>Surprise</th>
+                                        <th>Fear</th>
+                                        <th>Disgust</th>
+                                        <th>UAR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="9" class="center">MOSEI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A+V+T</td>
+                                        <td class="center">&mdash;</td>
+                                        <td class="center">56.9</td>
+                                        <td class="center">68.9</td>
+                                        <td class="center">48.4</td>
+                                        <td class="center">54.0</td>
+                                        <td class="center">77.4</td>
+                                        <td class="center">57.3</td>
+                                        <td class="center">60.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o A</td>
+                                        <td class="center">&mdash;</td>
+                                        <td class="center">69.7 ↑</td>
+                                        <td class="center">68.1</td>
+                                        <td class="center">44.3</td>
+                                        <td class="center">52.2</td>
+                                        <td class="center">72.8</td>
+                                        <td class="center">52.7 ↓</td>
+                                        <td class="center">60.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o V</td>
+                                        <td class="center">&mdash;</td>
+                                        <td class="center">55.7</td>
+                                        <td class="center">72.5 ↑</td>
+                                        <td class="center">50.7</td>
+                                        <td class="center">51.7</td>
+                                        <td class="center">71.6 ↓</td>
+                                        <td class="center">53.2</td>
+                                        <td class="center">59.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o T</td>
+                                        <td class="center">&mdash;</td>
+                                        <td class="center">45.8 ↓</td>
+                                        <td class="center">56.3 ↓</td>
+                                        <td class="center">45.0</td>
+                                        <td class="center">49.9 ↓</td>
+                                        <td class="center">72.2</td>
+                                        <td class="center">62.9 ↑</td>
+                                        <td class="center">55.3 ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="9" class="center">MELD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A+V+T</td>
+                                        <td class="center">68.7</td>
+                                        <td class="center">65.9</td>
+                                        <td class="center">53.8</td>
+                                        <td class="center">59.7</td>
+                                        <td class="center">69.0</td>
+                                        <td class="center">44.0</td>
+                                        <td class="center">42.6</td>
+                                        <td class="center">57.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o A</td>
+                                        <td class="center">64.1</td>
+                                        <td class="center">67.4 ↑</td>
+                                        <td class="center">52.4</td>
+                                        <td class="center">48.7</td>
+                                        <td class="center">71.5 ↑</td>
+                                        <td class="center">40.0</td>
+                                        <td class="center">30.9 ↓</td>
+                                        <td class="center">53.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o V</td>
+                                        <td class="center">58.2</td>
+                                        <td class="center">65.9</td>
+                                        <td class="center">59.1 ↑</td>
+                                        <td class="center">38.6</td>
+                                        <td class="center">70.5 ↑</td>
+                                        <td class="center">40.0</td>
+                                        <td class="center">35.3</td>
+                                        <td class="center">52.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o T</td>
+                                        <td class="center">37.9 ↓</td>
+                                        <td class="center">2.7 ↓</td>
+                                        <td class="center">10.6 ↓</td>
+                                        <td class="center">84.9 ↑</td>
+                                        <td class="center">1.1 ↓</td>
+                                        <td class="center">20.0 ↓</td>
+                                        <td class="center">41.2</td>
+                                        <td class="center">28.3 ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="9" class="center">AFEW</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A+V+T</td>
+                                        <td class="center">84.1</td>
+                                        <td class="center">88.7</td>
+                                        <td class="center">74.2</td>
+                                        <td class="center">70.3</td>
+                                        <td class="center">48.9</td>
+                                        <td class="center">60.9</td>
+                                        <td class="center">53.7</td>
+                                        <td class="center">68.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o A</td>
+                                        <td class="center">76.2</td>
+                                        <td class="center">90.3 ↑</td>
+                                        <td class="center">53.2</td>
+                                        <td class="center">43.8 ↓</td>
+                                        <td class="center">51.1 ↑</td>
+                                        <td class="center">54.3</td>
+                                        <td class="center">46.3</td>
+                                        <td class="center">59.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o V</td>
+                                        <td class="center">49.2 ↓</td>
+                                        <td class="center">40.3 ↓</td>
+                                        <td class="center">35.5 ↓</td>
+                                        <td class="center">54.7</td>
+                                        <td class="center">26.7 ↓</td>
+                                        <td class="center">50.0</td>
+                                        <td class="center">29.3 ↓</td>
+                                        <td class="center">40.8 ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/o T</td>
+                                        <td class="center">60.3</td>
+                                        <td class="center">74.4</td>
+                                        <td class="center">75.8 ↑</td>
+                                        <td class="center">75.0</td>
+                                        <td class="center">42.2</td>
+                                        <td class="center">32.6 ↓</td>
+                                        <td class="center">34.1</td>
+                                        <td class="center">56.8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="conclusion-section">
             <div class="container is-max-desktop">

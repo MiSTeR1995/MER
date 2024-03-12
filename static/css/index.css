@@ -78,6 +78,10 @@ section {
   margin: 0px auto;
 }
 
+.table table .center {
+  text-align: center !important;
+}
+
 .examples {
   padding: 50px 0 80px 0;
   border-bottom: 1px solid #363636;
