@@ -230,68 +230,91 @@
             </div>
         </div>
 
-        <div class="table-section">
+        <div class="pipeline-section">
             <div class="container is-max-desktop">
-                <div class="table">
+                <div class="pipeline">
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
-                            <h6 class="title is-6">Train, Validation, and Test subsets, number of emotions, class imbalance and performance measures of research corpora. Acc refers to Accuracy, wAcc to Weighted Accuracy, F1 to F1-score, UAR to Unweighted Average Recall</h6>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Corpus</th>
-                                        <th>Train</th>
-                                        <th>Val.</th>
-                                        <th>Test</th>
-                                        <th>Classes of emotions</th>
-                                        <th>Class imbalance (Mean / STD)</th>
-                                        <th>Evaluation measures</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>IEMOCAP</td>
-                                        <td class="center">5229</td>
-                                        <td class="center">581</td>
-                                        <td class="center">1623</td>
-                                        <td class="center">6</td>
-                                        <td class="center">959.7 / 344.4</td>
-                                        <td>Acc / F1 / UAR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MOSEI</td>
-                                        <td class="center">16216</td>
-                                        <td class="center">1835</td>
-                                        <td class="center">4625</td>
-                                        <td class="center">6</td>
-                                        <td class="center">3734.3 / 2441.1</td>
-                                        <td>Acc / wAcc / F1 / UAR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MELD</td>
-                                        <td class="center">9989</td>
-                                        <td class="center">1109</td>
-                                        <td class="center">2610</td>
-                                        <td class="center">7</td>
-                                        <td class="center">1426.9 / 1427.0</td>
-                                        <td>Acc / F1 / UAR</td>
-                                    </tr>
-                                    <tr>
-                                        <td>AFEW</td>
-                                        <td class="center">773</td>
-                                        <td class="center">383</td>
-                                        <td class="center">&mdash;</td>
-                                        <td class="center">7</td>
-                                        <td class="center">110.4 / 31.1</td>
-                                        <td>Acc / F1 / UAR</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <h2 class="title is-3">Gated feature layer (GFL) architecture</h2>
+                            <img class="img-method" id="gfl" src="./static/img/gfl.png" alt="pipeline">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    <div class="table-section">
+        <div class="container is-max-desktop">
+            <div class="table">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h6 class="title is-6">The statistics of research corpora. Acc refers to Accuracy, wAcc to Weighted Accuracy, F1 to F1-score, UAR to Unweighted Average Recall.</h6>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Corpus</th>
+                                    <th>Dur., h</th>
+                                    <th>Dur. range, sec (Min / Max / Mean)</th>
+                                    <th>Train</th>
+                                    <th>Val.</th>
+                                    <th>Test</th>
+                                    <th>Classes of emotions</th>
+                                    <th>Class imbalance (Mean / STD)</th>
+                                    <th>Evaluation measures</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IEMOCAP</td>
+                                    <td>9:24</td>
+                                    <td>0.6 / 34.1 / 4.6</td>
+                                    <td>5229</td>
+                                    <td>581</td>
+                                    <td>1623</td>
+                                    <td>6</td>
+                                    <td>959.7 / 344.4</td>
+                                    <td>Acc / F1 / UAR</td>
+                                </tr>
+                                <tr>
+                                    <td>MOSEI</td>
+                                    <td>45:51</td>
+                                    <td>0.2 / 108.9 / 7.2</td>
+                                    <td>16216</td>
+                                    <td>1835</td>
+                                    <td>4625</td>
+                                    <td>6</td>
+                                    <td>3734.3 / 2441.1</td>
+                                    <td>Acc / wAcc / F1 / UAR</td>
+                                </tr>
+                                <tr>
+                                    <td>MELD</td>
+                                    <td>12:4</td>
+                                    <td>0.2 / 304.9 / 3.2</td>
+                                    <td>9989</td>
+                                    <td>1109</td>
+                                    <td>2610</td>
+                                    <td>7</td>
+                                    <td>1426.9 / 1427.0</td>
+                                    <td>Acc / F1 / UAR</td>
+                                </tr>
+                                <tr>
+                                    <td>AFEW</td>
+                                    <td>0:48</td>
+                                    <td>0.5 / 6.3 / 2.5</td>
+                                    <td>773</td>
+                                    <td>383</td>
+                                    <td>--</td>
+                                    <td>7</td>
+                                    <td>110.4 / 31.1</td>
+                                    <td>Acc / F1 / UAR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="table-section">
         <div class="container is-max-desktop">
