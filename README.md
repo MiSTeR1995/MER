@@ -4,7 +4,11 @@ The official repository for "Multi-Corpus Emotion Recognition Method based on Cr
 
 ## Abstract
 
-Automatic emotion recognition is critical to human-computer interaction. However, current methods suffer from limited applicability as they tend to overfit on single-corpus datasets that reduces their real-world effectiveness when faced with new corpora. We propose a first multi-corpus emotion recognition method with high generalizability evaluated by the leave-one-corpus-out protocol. The method uses three encoders for each modality (audio, video, and text) and a decoder that employs a gated attention mechanism to combine features from all three modalities. The method is evaluated on four multimodal corpora: CMU-MOSEI, MELD, IEMOCAP, and AFEW. Our method achieves the state-of-the-art results on the research corpora and establishes the first baselines for multi-corpus studies. Also, our results demonstrate that the models trained with MELD exhibit the best generalizability to new data.
+Automatic emotion recognition methods are critical to human-computer interaction. However, current methods suffer from limited applicability due to their tendency to overfit on single-corpus datasets. This overfitting reduces real-world effectiveness of the methods when faced with new unseen corpora. We propose the first multi-corpus multimodal emotion recognition method with high generalizability evaluated through a leave-one-corpus-out protocol. The method uses three fine-tuned encoders per modality (audio, video, and text) and a decoder employing context-independent gated attention to combine features from all three modalities. The research is conducted on four benchmark corpora: MOSEI, MELD, IEMOCAP, and AFEW.  The proposed method achieves the state-of-the-art results on the corpora and establishes the first baselines for multi-corpus studies.
+
+We demonstrate that due to the MELD rich emotional expressiveness across three modalities, the models trained on it exhibit the best generalization ability when applied to corpora used.
+
+We also reveal that the AFEW annotation better correlates with the annotations of MOSEI, MELD, IEMOCAP and shows the best cross-corpus performance as it is consistent with the widely-accepted concepts of basic emotions.
 
 ## Acknowledgments
 
